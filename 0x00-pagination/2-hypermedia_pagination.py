@@ -22,7 +22,7 @@ class Server(Server):
         """
         data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
-        
+
         return {
             "page_size": len(data),
             "page": page,
